@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RIFQI ❤️ ONA</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 25px 18px 50px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 38px;
+    margin-top: 20px;
+    text-shadow: 0 3px 10px rgba(0,0,0,.25);
+}
+
+.subtitle {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.photo {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 25px auto 20px;
+    display: block;
+    border: 6px solid white;
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+.card {
+    background: rgba(255,255,255,.18);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 22px;
+    margin-top: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+.message {
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: bold;
+}
+
+.date {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.time {
+    background: rgba(255,255,255,.25);
+    border-radius: 15px;
+    padding: 10px 4px;
+}
+
+.time strong {
+    display: block;
+    font-size: 24px;
+}
+
+.time span {
+    font-size: 11px;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    padding: 14px 24px;
+    margin: 10px 5px 0;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ff4f81;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+.letter {
+    display: none;
+    margin-top: 20px;
+    background: rgba(255,255,255,.95);
+    color: #444;
+    border-radius: 20px;
+    padding: 22px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    font-size: 20px;
+    animation: naik 5s linear forwards;
+    pointer-events: none;
+}
+
+@keyframes naik {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
+
+audio {
+    width: 100%;
+    margin-top: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>RIFQI ❤️ ONA</h1>
+
+    <div class="subtitle">
+        Untuk seseorang yang selalu ada di hati ❤️
+    </div>
+
+    <img src="61072.png" class="photo" alt="Foto RIFQI dan ONA">
+
+    <div class="card">
+
+        <div class="message">
+            SAYANGGKUHHH ❤️<br>
+            MAAF YAA HARUS LDR SYANGG 🥺
+        </div>
+
+        <div class="date">
+            Sampai kita bertemu lagi pada<br>
+            <b>5 Desember 2026 ❤️</b>
+        </div>
+
+        <div class="countdown">
+            <div class="time">
+                <strong id="days">0</strong>
+                <span>HARI</span>
+            </div>
+
+            <div class="time">
+                <strong id="hours">0</strong>
+                <span>JAM</span>
+            </div>
+
+            <div class="time">
+                <strong id="minutes">0</strong>
+                <span>MENIT</span>
+            </div>
+
+            <div class="time">
+                <strong id="seconds">0</strong>
+                <span>DETIK</span>
+            </div>
+        </div>
+
+        <audio id="music" controls>
+            <source src="lagu.mp3" type="audio/mpeg">
+            Browser kamu tidak mendukung audio.
+        </audio>
+
+        <button onclick="toggleMusic()">
+            🎵 PUTAR / PAUSE LAGU
+        </button>
+
+        <button onclick="openLetter()">
+            💌 BUKA SURAT
+        </button>
+
+    </div>
+
+    <div class="letter" id="letter">
+
+        <h2>Untuk ONA ❤️</h2>
+
+        <br>
+
+        Sayangggkuhh... 🥺❤️
+
+        <br><br>
+
+        Maaf yaa kita harus LDR.
+        Walaupun jarak kita jauh, kamu tetap selalu dekat
+        di hati aku.
+
+        <br><br>
+
+        Aku tahu LDR itu nggak selalu mudah.
+        Ada rasa kangen, ada rasa sepi, dan ada banyak
+        hal yang ingin kita lakukan bersama.
+
+        <br><br>
+
+        Tapi aku percaya, selama kita tetap saling menjaga,
+        saling percaya, dan saling menyayangi,
+        jarak ini cuma sementara.
+
+        <br><br>
+
+        Aku nggak sabar menunggu hari dimana kita bisa
+        bertemu lagi. ❤️
+
+        <br><br>
+
+        <b>RIFQI ❤️ ONA</b>
+
+        <br><br>
+
+        Sampai ketemu tanggal
+        <b>5 Desember 2026.</b> 🥰
+
+    </div>
+
+</div>
+
+<script>
+
+const target = new Date("December 5, 2026 00:00:00").getTime();
+
+function countdown() {
+
+    const now = new Date().getTime();
+    const distance = target - now;
+
+    if (distance <= 0) {
+        document.getElementById("days").innerText = "0";
+        document.getElementById("hours").innerText = "0";
+        document.getElementById("minutes").innerText = "0";
+        document.getElementById("seconds").innerText = "0";
+        return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) /
+        (1000 * 60 * 60)
+    );
+
+    const minutes = Math.floor(
+        (distance % (1000 * 60 * 60)) /
+        (1000 * 60)
+    );
+
+    const seconds = Math.floor(
+        (distance % (1000 * 60)) /
+        1000
+    );
+
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+    document.getElementById("seconds").innerText = seconds;
+}
+
+setInterval(countdown, 1000);
+countdown();
+
+
+function toggleMusic() {
+
+    const music = document.getElementById("music");
+
+    if (music.paused) {
+        music.play();
+    } else {
+        music.pause();
+    }
+
+}
+
+
+function openLetter() {
+
+    const letter = document.getElementById("letter");
+
+    if (letter.style.display === "block") {
+        letter.style.display = "none";
+    } else {
+        letter.style.display = "block";
+    }
+
+}
+
+
+/* HATI TERBANG */
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+    heart.innerHTML = "❤️";
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (15 + Math.random() * 25) + "px";
+    heart.style.animationDuration = (4 + Math.random() * 4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 8000);
+}
+
+setInterval(createHeart, 700);
+
+</script>
+
+</body>
+</html>
